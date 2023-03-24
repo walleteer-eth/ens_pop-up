@@ -1,0 +1,13 @@
+{
+  "name": "ENS Pop-up",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Displays ENS records when hovering over .eth domains.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
